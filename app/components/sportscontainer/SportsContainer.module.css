@@ -1,0 +1,47 @@
+.width0 {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.75rem;
+    border: 2px dotted white;
+    background-color: black;
+    color: black;
+  }
+  
+  @media (max-width: 840px) {
+    .width0 {
+      width: 200px;
+      padding: 0.5rem;
+    }
+  }
+  
+  @media (max-width: 470px) {
+    .width0 {
+      width: 140px;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+    }
+  }
+  
+  .sportItem {
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+    flex-grow: 0;
+  }
+  
+  .sportItemContainer {
+    transition: margin-bottom 0.3s ease;
+    margin-bottom: 5px;
+  }
+  
+  .row {
+    overflow: hidden;
+  }
+  
+  .row1,
+  .row2 {
+    margin-left: -50%;
+  }
+  
+  

@@ -1,0 +1,40 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id       Int    @id @default(autoincrement())
+  name     String
+  email    String @unique
+  username String @unique
+  password String
+  token String?  @unique
+}
+model Mail {
+  id      Int @id @default(autoincrement())
+  user    String?
+  waitingemail   String
+  createdAt DateTime @default(now())
+}
+model Query {
+  id  Int @id @default(autoincrement())
+  fname String
+  lname String
+  email String
+  phone String
+  subject String
+  message String
+  createdAt DateTime @default(now())
+}
+model Blog {
+  id Int @id @default(autoincrement())
+  title String
+  description String
+  category String
+  createdAt DateTime@default(now())
+}

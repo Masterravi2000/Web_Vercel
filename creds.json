@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "goodwill-445011",
+  "private_key_id": "4601d58489a3d40af6bb5d60623914c854012a09",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCnSZkOCOXdTXZQ\n5lWqosurInW0ijPJdDrA6P2pwnoiv3ZVbZqUQC0unkZ/OjXNWNhkEhI7bpHFRtPw\nYzKl94SZPHzkjQREPnGliEs8nPBxDXdaJigOQJtFHhcxbAYZuQX/il2b+kynFzn3\n26LTOQl4ySn2YBGky1sfldNVTwJ5E2sB6aqHlxm5SPaEvBDfqlt/Bh8ei0ibVxaG\nAjm96Bs2m1k5fNmdMg3AtzBhKU6yAzqLJYYL5DK9AO3Qe4gc+cP/qNCDTchUQMj1\nXkt6WWeJ6USkDlPlNIEo0wgpL7wcvpIVC8SY6z//7rnMF3kIQydTTBv+ImOUzJoB\n+1MQ2lZNAgMBAAECggEAIAz3hEsboUAJWlwbDyeEHnxqcUXmQKNia1noWbk/Nb+Z\nkCoA6wT1syATcSZJrxdl1BxrPlRDnPiiPAUBa+9ligdfBVnoNpwBIZ4gjhMidQKH\nuq+jToG9zesDNg6Uh6KdndVYdH0q6PuH+W8s/cuIf0oJXmEPGFP22DEYLZjG6EPK\nq3SLQcu5UoILxnCxf+8xaiSm6SI5ZVlog2pxhcoDKMFS+d1gThOteBAg+IYVf2P0\ns6YKVgNKVc8MXp1/bu/+LNJm8cvXn3lHG5Ub6zeq97EMNtc7U7/tZbmVxtMjdzM9\np+eBjmU7oFfDKtCmBcCgxoEbA/AybnbNtUxIE1/RCQKBgQDlm3+D+DQ380VdfmgW\ncBoR+/NBrKHU22GeOuVx/7VjLTXV9g3O+g3GVn+p9X0xy0CLsTzwrNXl+LmmFZej\nQJPUz72ClDG2FjhJ8lfIeFJCXGAu0BCFJs5O++wMtKX7OIsGu3eS2tsnp+Gpedk5\nXy2Hn+Z6nzOLHIOJbDyvabOayQKBgQC6hEDr1xEPu+yvjyJEkJvqqLQ2IhWFUBUT\nEb7wgSj6vdpx4jhxhb9PcBjPOqHh9aEq/j7jJCbQkyKKwhhWMLsIWE/Swmr4aLfQ\nJQYFvF/xRwAG87jFAO5bH0H+0OdZm5mDltefyPG92/2jzFEE9aouqRaLPlvB1zk+\nveuBlgmdZQKBgQCW4l+inqnaFrB/pwDJtfM73EDX6JUUZvI4Y+XBy1MskFovd5lN\naX9B1jfgvWT/It0Qr3Eni7yoepGtNcVHT7mWAMo9lBsy2Fk3Jt1O7NrJpyDBwpMI\nnR64Qs607sWgWGDsFKeYRt/7qFQf5eW80PH/jTGNZS8e/Kbn2MvsTd7sGQKBgHr3\nTHHwBXCRHdcUj6wShqirdrwltniAtpQu4+pdzO2ak1T3puy5F8rAharB5g45yXq1\nyjIoGGr0RhajJjZUxEoZJu81fB6vs1fHwPOxILPKcmsi7ZL8LSjoL7NWeOAr5IbL\nwPa4HSBl1A/UWSni6MMAeTtt7kKaqUQDJCv4Bfi9AoGBALdeB1I9Br1qeLb+Hlyl\nGE0g4zbMdKCKXNJ3tzAwJEcBiiUP/gqjpkDbStPEFJ/z0XxoYxO/I7GfN9P6nNp3\n4lJe6u8ZlFyW3qFXkZezqhftt7lPohLUdbjKdwHo3KZWpjiyaUD8HuayeILM65Xk\nspsp1UpEB12yxMzbeo03pzoJ\n-----END PRIVATE KEY-----\n",
+  "client_email": "strength@goodwill-445011.iam.gserviceaccount.com",
+  "client_id": "106691221211604457726",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/strength%40goodwill-445011.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
