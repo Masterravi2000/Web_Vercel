@@ -21,7 +21,7 @@ export default function SportsProfile() {
           <div className="flex w-full h-fit my-auto flex-col gap-2 pr-[100px] max-xl:pr-0 max-[550px]:px-2">
             <div className="w-full">
               <Image src="/svg/createsports.svg" alt="" width={30} height={30} className="custom-fade-up mb-6 hidden max-[650px]:block" data-delay="100" />
-              <h1 className="custom-fade-up text-white text-4xl max-[1024px]:text-3xl max-[720px]:text-xl max-[650px]:text-left max-[650px]:text-4xl max-[500px]:text-2xl max-[400px]:text-xl max-[840px]:w-full" data-aos="fade-up" style={{ fontFamily: 'Krona One' }}> Create your sports Ravi </h1>
+              <h1 className="custom-fade-up text-white text-4xl max-[1024px]:text-3xl max-[720px]:text-xl max-[650px]:text-left max-[650px]:text-4xl max-[500px]:text-2xl max-[400px]:text-xl max-[840px]:w-full" data-aos="fade-up" style={{ fontFamily: 'Krona One' }}> Create your sports profile </h1>
             </div>
             <p className="custom-fade-up text-gray-400 text-2xl font-thin max-[980px]:text-xl max-[720px]:text-base max-[650px]:text-left max-[650px]:text-lg max-[400px]:text-base" data-delay="100" data-aos="fade-up"> This is your chance to showcase your journey, gain recognition, and open doors to new opportunities. </p>
           </div>
