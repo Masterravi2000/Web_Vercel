@@ -42,7 +42,7 @@ const MainSection: React.FC = () => {
 <div id="main" className="flex pt-8 justify-between items-center py-0 px-[240px] max-[1496px]:px-10 max-[1090px]:px-14 max-lg:flex-col-reverse bg-black max-lg:px-0 max-[550px]:pt-0 pb-20" data-aos="fade-up">
       <div className="w-fit flex-col justify-center items-center max-md:px-10 max-lg:w-full">
         <h1 className="text-white text-[6rem] max-[1700px]:text-[5rem] font-bold leading-[5.5rem] max-[1360px]:text-6xl max-xl:leading- [4rem] max-[1060px]:text-5xl max-lg:mt-8 max-lg:text-center max-[500px]:text-4xl max-[500px]:text-left max-[460px]:ml-0 tracking-wide">
-          Step into <br className="max-lg:hidden" /> the <br className="hidden max-[400px]:block" /> world of <br className="max-lg:hidden" />sports
+           into <br className="max-lg:hidden" /> the <br className="hidden max-[400px]:block" /> world of <br className="max-lg:hidden" />sports
         </h1>
         <div className="w-[90%] flex justify-between items-center mt-[100px] max-[1700px]:mt-8 lg:flex-col max-lg:mx-auto max-lg:gap-x-8 max-lg:w-[90%] max-[500px]:flex-col max-[500px]:gap-y-5 max-[1060px]:mt-24 max-[600px]:mt-14 max-[600px]:w-full">
           <button
