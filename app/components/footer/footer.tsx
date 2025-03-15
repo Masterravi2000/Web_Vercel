@@ -85,9 +85,9 @@ export default function Footer() {
             <li>
               <Link href="/contactus" className="capitalize hover:cursor-pointer max-[800px]:text-xl">contact</Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="/articles" className="capitalize hover:cursor-pointer max-[800px]:text-xl">articles</Link>
-            </li>
+            </li> */}
           </ul>
           <div className="w-fit flex gap-x-6 my-auto max-[800px]:mt-10">
             <a href="https://www.instagram.com/_yourstrength_?igsh=aHJnNDgwd2k3Njg%3D&utm_source=qr" target="_blank" rel="noopener noreferrer">

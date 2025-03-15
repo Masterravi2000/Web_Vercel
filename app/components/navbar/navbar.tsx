@@ -52,7 +52,7 @@ const Navbar: React.FC = () => {
         <NavLink href="/">Home</NavLink>
         <NavLink href="/contactus">Contact</NavLink>
         <NavLink href="/about">About us</NavLink>
-        <NavLink href="/articles">Articles</NavLink>
+        {/* <NavLink href="/c">Articles</NavLink> */}
         <div>
           <button
             onClick={handleJoinWaitlist}
