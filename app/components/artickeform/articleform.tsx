@@ -112,13 +112,13 @@
            <option value="Basketball">Basketball</option>
            {/* Add more sports as needed */}
          </select>
-         <div className="flex flex-col items-center justify-center border border-gray-400 rounded-lg p-6 cursor-pointer relative w-full h-64">
+         <div className="flex flex-col items-center justify-center border border-gray-400 rounded-lg p-6 cursor-pointer relative w-[640px] h-[360px]">
            {previewUrl ? (
-             <div className="relative w-full h-full aspect-[16/9]">
+             <div className="relative w-full h-full">
                <img
                  src={previewUrl}
                  alt="Preview"
-                 className="object-contain w-full h-full rounded-lg"
+                 className="object-cover w-full h-full rounded-lg"
                />
                <button
                  type="button"
