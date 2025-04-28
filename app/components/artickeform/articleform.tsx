@@ -23,22 +23,24 @@
    });
  
    const handleChange = (
-     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-   ) => {
-     const { name, value, type, checked } = e.target;
- 
-     if (type === "checkbox") {
-       setFormData((prev) => ({
-         ...prev,
-         [name]: checked, // Use `checked` for checkbox inputs
-       }));
-     } else {
-       setFormData((prev) => ({
-         ...prev,
-         [name]: value, // Use `value` for text inputs and textareas
-       }));
-     }
-   };
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value, type } = e.target;
+  
+    if (type === "checkbox") {
+      const target = e.target as HTMLInputElement;
+      setFormData((prev) => ({
+        ...prev,
+        [name]: target.checked,
+      }));
+    } else {
+      setFormData((prev) => ({
+        ...prev,
+        [name]: value,
+      }));
+    }
+  };
+  ;
  
    const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
      if (e.target.files) {
