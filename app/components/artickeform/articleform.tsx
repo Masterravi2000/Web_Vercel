@@ -23,7 +23,7 @@
    });
  
    const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
   ) => {
     const { name, value, type } = e.target;
   
@@ -42,25 +42,28 @@
   };
   ;
  
-   const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-     if (e.target.files) {
-       const file = e.target.files[0]; // Get the first file
-       setFormData((prev) => ({
-         ...prev,
-         assets: Array.from(e.target.files),
-       }));
- 
-       // Set the preview URL for the image
-       const reader = new FileReader();
-       reader.onloadend = () => {
-         setPreviewUrl(reader.result as string);
-       };
-       if (file) {
-         reader.readAsDataURL(file);
-       }
-     }
-   };
- 
+  const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const files = e.target.files; // 👈 Save first
+  
+    if (files && files.length > 0) {
+      const fileArray = Array.from(files); // ✅ Now no null error
+  
+      const file = fileArray[0]; // First file
+  
+      setFormData((prev) => ({
+        ...prev,
+        assets: fileArray, // ✅ Safe!
+      }));
+  
+      // Set the preview URL
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        setPreviewUrl(reader.result as string);
+      };
+      reader.readAsDataURL(file);
+    }
+  };
+  
    const handleSubmit = async (e: React.FormEvent) => {
      e.preventDefault();
      const POST_URI = process.env.NEXT_PUBLIC_POST_ARTICLE_URI;
