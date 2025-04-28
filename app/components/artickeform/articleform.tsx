@@ -27,11 +27,12 @@
   ) => {
     const { name, value, type } = e.target;
   
-    if (type === "checkbox") {
-      const target = e.target as HTMLInputElement;
+    if (type === "checkbox" && e.target instanceof HTMLInputElement) {
+      const checked = e.target.checked;
+  
       setFormData((prev) => ({
         ...prev,
-        [name]: target.checked,
+        [name]: checked,
       }));
     } else {
       setFormData((prev) => ({
@@ -40,7 +41,7 @@
       }));
     }
   };
-  ;
+  
  
   const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const files = e.target.files; // 👈 Save first
