@@ -1,10 +1,19 @@
 import React from 'react';
 import Navbar from '../components/navbar/navbar';
-import Footer from '../components/footer/footer'; // Make sure this exists
+import Footer from '../components/footer/footer';
 
 const PrivacyPolicy = () => {
   return (
-    <div style={{ backgroundColor: 'black', color: '#eaeaea', fontFamily: 'Inter, sans-serif', minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
+    <div
+      style={{
+        backgroundColor: 'black',
+        color: '#eaeaea',
+        fontFamily: 'Inter, sans-serif',
+        minHeight: '100vh',
+        display: 'flex',
+        flexDirection: 'column',
+      }}
+    >
       <Navbar />
 
       <main style={{ flex: '1', display: 'flex', justifyContent: 'center', padding: '2rem' }}>
@@ -55,7 +64,7 @@ const PrivacyPolicy = () => {
               <li>You can request a copy of your data.</li>
             </ul>
 
-            <h2 style={sectionHeading}>6. Children's Privacy</h2>
+            <h2 style={sectionHeading}>6. Children&apos;s Privacy</h2>
             <p style={paragraph}>
               Our service is not directed to individuals under 13. We do not knowingly collect personal data from children.
             </p>
