@@ -85,6 +85,12 @@ export default function Footer() {
             <li>
               <Link href="/contactus" className="capitalize hover:cursor-pointer max-[800px]:text-xl">contact</Link>
             </li>
+            <li>
+              <Link href="/privacy-policy" className="capitalize hover:cursor-pointer max-[800px]:text-xl">Privacy Policy</Link>
+            </li>
+            <li>
+              <Link href="/user-agreement" className="capitalize hover:cursor-pointer max-[800px]:text-xl">User Agreement</Link>
+            </li>
             {/* <li>
               <Link href="/articles" className="capitalize hover:cursor-pointer max-[800px]:text-xl">articles</Link>
             </li> */}
