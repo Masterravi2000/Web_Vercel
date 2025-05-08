@@ -92,7 +92,7 @@ export default function Footer() {
               <Link href="/user-agreement" className="capitalize hover:cursor-pointer max-[800px]:text-xl">User Agreement</Link>
             </li>
             {/* <li>
-              <Link href="/articles" className="capitalize hover:cursor-pointer max-[800px]:text-xl">articles</Link>
+              <Link ref="/articles" className="capitalize hover:cursor-pointer max-[800px]:text-xl">articles</Link>
             </li> */}
           </ul>
           <div className="w-fit flex gap-x-6 my-auto max-[800px]:mt-10">
