@@ -23,18 +23,18 @@ const CloseAccountPage = () => {
               Close Your Strength Account
             </h1>
             <p style={{ fontSize: '1rem', color: '#aaa' }}>
-              We're sorry to see you go, but we respect your decision.
+              We&apos;re sorry to see you go, but we respect your decision.
             </p>
           </header>
 
           <section style={{ lineHeight: '1.75', fontSize: '1rem' }}>
             <p style={{ marginBottom: '2rem', textAlign: 'center' }}>
-              If you’re considering closing your Strength account, we’re here to help. This is a permanent action and cannot be undone. Please read the following information carefully.
+              If you&rsquo;re considering closing your Strength account, we&rsquo;re here to help. This is a permanent action and cannot be undone. Please read the following information carefully.
             </p>
 
             <h2 style={sectionHeading}>Overview</h2>
             <p style={paragraph}>
-              Closing your Strength account means you’ll lose access to your sports profile, connections, posts, and any associated data. You won't be able to recover your data after closure.
+              Closing your Strength account means you&rsquo;ll lose access to your sports profile, connections, posts, and any associated data. You won&apos;t be able to recover your data after closure.
             </p>
 
             <h2 style={sectionHeading}>Steps to Close Your Account</h2>
@@ -46,19 +46,19 @@ const CloseAccountPage = () => {
                 },
                 {
                   title: 'Select Settings',
-                  steps: ['Choose "Settings" from the dropdown menu.'],
+                  steps: ['Choose &quot;Settings&quot; from the dropdown menu.'],
                 },
                 {
                   title: 'Click on Close Account',
-                  steps: ['Scroll to the bottom of the settings panel.', 'Click "Close Account" to continue.'],
+                  steps: ['Scroll to the bottom of the settings panel.', 'Click &quot;Close Account&quot; to continue.'],
                 },
                 {
                   title: 'Review the Closure Information',
-                  steps: ['Read all information thoroughly.', 'Click "Next" to proceed.'],
+                  steps: ['Read all information thoroughly.', 'Click &quot;Next&quot; to proceed.'],
                 },
                 {
                   title: 'Enter Your Credentials',
-                  steps: ['Confirm with your email and password.', 'Click "Done" to finalize.'],
+                  steps: ['Confirm with your email and password.', 'Click &quot;Done&quot; to finalize.'],
                 },
               ].map(({ title, steps }, index) => (
                 <li key={index} style={{ marginBottom: '1.5rem' }}>
