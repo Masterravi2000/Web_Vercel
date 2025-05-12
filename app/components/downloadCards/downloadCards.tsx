@@ -1,6 +1,5 @@
-import { FaApple, FaAndroid, FaDownload } from 'react-icons/fa';
+import { FaApple, FaAndroid } from 'react-icons/fa';
 import { TbDownload } from "react-icons/tb";
-import { DiAndroid } from "react-icons/di";
 
 const DownloadCard = ({ type = 'iOS' }) => {
     const isIOS = type === 'iOS';

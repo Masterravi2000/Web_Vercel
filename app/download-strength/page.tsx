@@ -3,7 +3,6 @@
 import React from 'react'
 import Navbar from '../components/navbar/navbar';
 import Footer from '../components/footer/footer';
-import JoinWaitlistModal from '../components/modal/app'
 import SportsCommunitySection from "./../components/discover2/discover2";
 import DownloadSection from '../components/downloadCards/downloadCards';
 
