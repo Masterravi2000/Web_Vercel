@@ -1,5 +1,6 @@
-import { FaApple, FaAndroid } from 'react-icons/fa';
+import { FaApple } from 'react-icons/fa';
 import { TbDownload } from "react-icons/tb";
+import { DiAndroid } from "react-icons/di";
 
 const DownloadCard = ({ type = 'iOS' }) => {
     const isIOS = type === 'iOS';
@@ -12,11 +13,11 @@ const DownloadCard = ({ type = 'iOS' }) => {
             }}
         >
             <div>
-                <div className="bg-black rounded-full w-16 h-16 flex items-center justify-center shadow-lg mb-6">
+                <div className="bg-[#111111] rounded-full w-16 h-16 md:w-24 md:h-24 flex items-center justify-center shadow-lg mb-6">
                     {isIOS ? (
-                        <FaApple className="text-white text-3xl" />
+                        <FaApple className="text-white text-3xl md:text-6xl" />
                     ) : (
-                        <FaAndroid className="text-white text-3xl" />
+                        <DiAndroid className="text-white text-3xl md:text-6xl" />
                     )}
                 </div>
                 {/* Mobile Phone Text */}

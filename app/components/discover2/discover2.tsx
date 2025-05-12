@@ -5,9 +5,14 @@ import "aos/dist/aos.css";
 import Image from 'next/image'
 import { FC } from 'react'
 import JoinWaitlistModal from '../modal/app'
+import { BsDownload } from "react-icons/bs";
 
 
-const SportsCommunitySection: FC = () => {
+type Props = {
+  onDownloadClick: () => void;
+};
+
+const SportsCommunitySection: FC<Props> = ({ onDownloadClick }) => {
     useEffect(() => {
         AOS.init
             ({
@@ -50,22 +55,23 @@ const SportsCommunitySection: FC = () => {
             </div>
 
             {/* // for phones screen */}
-            <div className="block md:hidden">
+            <div className="block md:hidden px-4">
                 <h1
-                    className="custom-fade-up text-[2rem] text-[#E7E7E7] font-black font-bold text-center leading-[2.5rem] [text-stroke:1px_#000]"
+                    className="text-[2rem] text-[#E7E7E7] font-black text-center leading-[2.5rem]"
                     data-delay="1000"
                     data-aos="fade-up"
                 >
                     The coolest space for<br /> all things sports!
                 </h1>
                 <p
-                    className="custom-fade-up text-base text-[#E7E7E7] text-center mt-4 leading-[1.75rem]"
+                    className="text-base text-[#E7E7E7] text-center mt-4 leading-[1.75rem]"
                     data-delay="200"
                     data-aos="fade-up"
                 >
                     The key to unlocking your sports <br /> passion is getting involved
                 </p>
             </div>
+
 
             <div className="flex justify-center w-full pt-12">
                 <div className="relative w-fit" data-aos="fade-up">
@@ -74,26 +80,10 @@ const SportsCommunitySection: FC = () => {
 
                     {/* Main button */}
                     <button
-                        onClick={handleJoinWaitlist}
+                        onClick={onDownloadClick}
                         className="relative bg-white px-6 py-3 rounded-md border text-black border-black/10 flex items-center gap-4 text-lg font-semibold hover:translate-x-1 hover:translate-y-1 transition-transform">
                         {isJoining ? 'Joining...' : 'Download Beta'}
-                        <span className="inline-block">
-                            <svg
-                                width="20"
-                                height="20"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    d="M5 12H19M19 12L12 5M19 12L12 19"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                />
-                            </svg>
-                        </span>
+                        <BsDownload className="text-xl"/>
                     </button>
                 </div>
                 <JoinWaitlistModal isOpen={isModalOpen} onClose={closeModal} />
