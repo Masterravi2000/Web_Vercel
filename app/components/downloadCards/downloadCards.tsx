@@ -4,6 +4,7 @@ import { DiAndroid } from "react-icons/di";
 
 const DownloadCard = ({ type = 'iOS' }) => {
     const isIOS = type === 'iOS';
+    const androidLink = "https://expo.dev/artifacts/eas/eHNd5xEmRpoRZdrsEZcVFW.apk";
 
     return (
         <div
@@ -33,16 +34,31 @@ const DownloadCard = ({ type = 'iOS' }) => {
                     Join Strength today and take your sports experience to the next level.
                 </p>
             </div>
-            <button
-                className="mt-6 bg-[#F0F0F0] text-black text-14 md:text-28 font-bold flex items-center justify-start px-6 gap-4 
-             w-[193px] h-[44px] rounded-[26px] 
-             md:w-[310px] md:h-[72px] md:rounded-[41px] 
-             hover:scale-105 transition"
-            >
-                {/* <FaDownload className="text-lg" /> */}
-                <TbDownload className="text-xl md:text-3xl" />
-                Download
-            </button>
+           
+                {isIOS ? (
+                <button
+                    disabled
+                    className="mt-6 bg-[#303030] cursor-not-allowed text-white text-14 md:text-28 
+                    flex items-center justify-center px-6 gap-4 w-[193px] h-[44px] rounded-[26px] 
+                    md:w-[310px] md:h-[72px] md:rounded-[41px]"
+                >
+                    Coming Soon
+                </button>
+            ) : (
+                <a
+                    href={androidLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-6 bg-[#F0F0F0] text-black text-14 md:text-28 font-bold 
+                    flex items-center justify-start px-6 gap-4 
+                    w-[193px] h-[44px] rounded-[26px] 
+                    md:w-[310px] md:h-[72px] md:rounded-[41px] 
+                    hover:scale-105 transition"
+                >
+                    <TbDownload className="text-xl md:text-3xl" />
+                    Download
+                </a>
+            )}
 
         </div>
     );
