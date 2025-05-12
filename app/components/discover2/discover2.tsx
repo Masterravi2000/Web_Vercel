@@ -9,7 +9,7 @@ import { BsDownload } from "react-icons/bs";
 
 
 type Props = {
-  onDownloadClick: () => void;
+    onDownloadClick: () => void;
 };
 
 const SportsCommunitySection: FC<Props> = ({ onDownloadClick }) => {
@@ -53,14 +53,14 @@ const SportsCommunitySection: FC<Props> = ({ onDownloadClick }) => {
             {/* // for phones screen */}
             <div className="block md:hidden px-4">
                 <h1
-                    className="text-[2rem] text-[#E7E7E7] font-black text-center leading-[2.5rem]"
+                    className="text-[1.6rem] font-[700] text-[#E7E7E7 font-black text-center leading-[2.5rem]"
                     data-delay="1000"
                     data-aos="fade-up"
                 >
                     The coolest space for<br /> all things sports!
                 </h1>
                 <p
-                    className="text-base text-[#E7E7E7] text-center mt-4 leading-[1.75rem]"
+                    className="text-xs text-[#E7E7E7] text-center mt-4 leading-[1.75rem]"
                     data-delay="200"
                     data-aos="fade-up"
                 >
@@ -75,16 +75,29 @@ const SportsCommunitySection: FC<Props> = ({ onDownloadClick }) => {
                     <div className="absolute inset-0 bg-emerald-800 rounded-lg translate-x-2 translate-y-2" />
 
                     {/* Main button */}
-                    <button
-                        onClick={onDownloadClick}
-                        className="relative bg-white px-6 py-3 rounded-md border text-black border-black/10 flex items-center gap-4 text-lg font-semibold hover:translate-x-1 hover:translate-y-1 transition-transform">
-                        {isJoining ? 'Joining...' : 'Download Beta'}
-                        <BsDownload className="text-xl"/>
-                    </button>
+                    {/* for web and tab */}
+                    <div className="hidden md:block">
+                        <button
+                            onClick={onDownloadClick}
+                            className="relative bg-white px-6 py-3 rounded-md border text-black border-black/10 flex items-center gap-4 text-lg font-semibold hover:translate-x-1 hover:translate-y-1 transition-transform">
+                            {isJoining ? 'Joining...' : 'Download Beta'}
+                            <BsDownload className="text-xl" />
+                        </button>
+                    </div>
+
+                    {/* for phone  */}
+                    <div className="block md:hidden">
+                        <button
+                            onClick={onDownloadClick}
+                            className="relative bg-white px-6 py-3 rounded-md border text-black border-black/10 flex items-center gap-4 text-sm font-semibold hover:translate-x-1 hover:translate-y-1 transition-transform">
+                            {isJoining ? 'Joining...' : 'Download Beta'}
+                            <BsDownload className="text-xl" />
+                        </button>
+                    </div>
                 </div>
                 <JoinWaitlistModal isOpen={isModalOpen} onClose={closeModal} />
             </div>
-            <div className="relative w-[100%] h-auto mt-12 mx-auto" data-delay="400" data-aos="zoom-in-up">
+            <div className="relative w-[100%] h-auto mt-12 mx-auto">
                 <Image
                     src="/assets/phonesSet.png"
                     alt="Multiple phones"

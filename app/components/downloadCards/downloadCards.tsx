@@ -34,7 +34,7 @@ const DownloadCard = ({ type = 'iOS' }) => {
                 </p>
             </div>
             <button
-                className="mt-6 bg-[#F0F0F0] text-black text-14 md:text-24 font-bold flex items-center justify-start px-6 gap-4 
+                className="mt-6 bg-[#F0F0F0] text-black text-14 md:text-28 font-bold flex items-center justify-start px-6 gap-4 
              w-[193px] h-[44px] rounded-[26px] 
              md:w-[310px] md:h-[72px] md:rounded-[41px] 
              hover:scale-105 transition"
