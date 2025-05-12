@@ -24,10 +24,6 @@ const SportsCommunitySection: FC<Props> = ({ onDownloadClick }) => {
     const [isJoining] = useState(false)
     const [isModalOpen, setIsModalOpen] = useState(false)
 
-    const handleJoinWaitlist = () => {
-        setIsModalOpen(true)
-    }
-
 
     const closeModal = () => {
         setIsModalOpen(false)
