@@ -29,7 +29,7 @@ const SportsCommunitySection: FC = () => {
     }
 
   return (
-    <div className="mt-24 bg-[#121112] rounded-3xl pt-12 mx-[120px] max-[1496px]:mx-8 max-[900px]:mx-8 max-[800px]:mx-3 max-[700px]:h-fit border-[2px] border-[#303030] flex flex-col gap-y-4 max-md:hidden" id="community">
+    <div className="mt-24 bg-[#121112] rounded-3xl pt-12 mx-[120px] max-[1496px]:mx-8 max-[900px]:mx-8 max-[800px]:mx-3 max-[700px]:h-fit border-[2px] border-[#303030] flex flex-col gap-y-4" id="community">
     <h1
     className="custom-fade-up text-[3.5rem] text-[#E7E7E7] font-black font-bold text-center leading-[4rem] max-[950px]:text-[2.5rem] max-[950px]  :leading-[3rem] [text-stroke:1px_#000]"
     data-delay="1000"
