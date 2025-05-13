@@ -53,14 +53,14 @@ const SportsCommunitySection: FC<Props> = ({ onDownloadClick }) => {
             {/* // for phones screen */}
             <div className="block md:hidden px-4">
                 <h1
-                    className="text-[1.8rem] font-[900] text-[#E7E7E7] font-black text-center leading-[2.5rem]"
+                    className="text-[1.8rem] text-[#E7E7E7] font-black text-center leading-[2.5rem]"
                     data-delay="1000"
                     data-aos="fade-up"
                 >
                     The coolest space for<br /> all things sports!
                 </h1>
                 <p
-                    className="text-xs text-[#E7E7E7] text-center mt-4 leading-[1.75rem]"
+                    className="text-sm text-[#E7E7E7] text-center mt-4 leading-[1.75rem]"
                     data-delay="200"
                     data-aos="fade-up"
                 >

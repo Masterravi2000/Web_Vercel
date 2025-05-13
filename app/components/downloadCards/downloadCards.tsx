@@ -4,7 +4,7 @@ import { DiAndroid } from "react-icons/di";
 
 const DownloadCard = ({ type = 'iOS' }) => {
     const isIOS = type === 'iOS';
-    const androidLink = "https://expo.dev/artifacts/eas/eHNd5xEmRpoRZdrsEZcVFW.apk";
+    const androidLink = "https://play.google.com/store/apps/details?id=strength.net.in";
 
     return (
         <div
