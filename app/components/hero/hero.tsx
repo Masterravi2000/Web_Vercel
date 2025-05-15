@@ -10,7 +10,7 @@ const MainSection: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
-    AOS.init({ 
+    AOS.init({
       duration: 1000,
       once: true,
       mirror: false,
@@ -28,18 +28,21 @@ const MainSection: React.FC = () => {
   };
 
   const scrollToCommunity = () => {
-    const section = document.querySelector('#community');
+    const isMobile = window.innerWidth <= 768; // adjust breakpoint as per your design
+    const targetId = isMobile ? 'info' : 'community';
+    const section = document.querySelector(`#${targetId}`);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
     }
-  };  
+  };
+
 
   if (!isClient) {
     return null;
   }
 
   return (
-<div id="main" className="flex pt-8 justify-between items-center py-0 px-[240px] max-[1496px]:px-10 max-[1090px]:px-14 max-lg:flex-col-reverse bg-black max-lg:px-0 max-[550px]:pt-0 pb-20" data-aos="fade-up">
+    <div id="main" className="flex pt-8 justify-between items-center py-0 px-[240px] max-[1496px]:px-10 max-[1090px]:px-14 max-lg:flex-col-reverse bg-black max-lg:px-0 max-[550px]:pt-0 pb-18" data-aos="fade-up">
       <div className="w-fit flex-col justify-center items-center max-md:px-10 max-lg:w-full">
         <h1 className="text-white text-[6rem] max-[1700px]:text-[5rem] font-bold leading-[5.5rem] max-[1360px]:text-6xl max-xl:leading- [4rem] max-[1060px]:text-5xl max-lg:mt-8 max-lg:text-center max-[500px]:text-4xl max-[500px]:text-left max-[460px]:ml-0 tracking-wide">
           Step into <br className="max-lg:hidden" /> the <br className="hidden max-[400px]:block" /> world of <br className="max-lg:hidden" />sports
@@ -55,7 +58,7 @@ const MainSection: React.FC = () => {
             onClick={handleJoinWaitlist}
             className="lg:hidden w-full capitalize rounded-3xl sm:rounded-[4rem] text-lg text-white bg-[#12956B] px-8 py-7 max-[500px]:w-[100%] max-[600px]:py-5 max-[600px]:px-4 max-[500px]:py-2"
           >
-            Request early access mobile
+            Request early access
           </button>
           <button
             onClick={scrollToCommunity}
@@ -84,7 +87,7 @@ const MainSection: React.FC = () => {
       </div>
 
       {/* Popup Modal (only on larger devices) */}
-        <JoinWaitlistModal isOpen={isModalOpen} onClose={closeModal} />
+      <JoinWaitlistModal isOpen={isModalOpen} onClose={closeModal} />
     </div>
   );
 };

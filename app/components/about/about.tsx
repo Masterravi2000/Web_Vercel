@@ -25,11 +25,11 @@ export default function AboutSection() {
     }
   
   return (
-    <section className="w-full py-8 mt-24 px-4 sm:px-6 lg:px-8">
+    <section className="w-full py-8 md:mt-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-[1650px] mx-auto">
         <div className="grid grid-cols-12 gap-1">
           {/* Hero Section - Left 4 columns */}
-          <div className="col-span-12 lg:col-span-4 relative aspect-[9/16] lg:aspect-auto lg:h-[650px] overflow-hidden rounded-[40px]" data-aos="zoom-in-up">
+          <div className="col-span-12 lg:col-span-4 relative aspect-[9/16] lg:aspect-auto lg:h-[650px] overflow-hidden rounded-[40px]" id="info" data-aos="zoom-in-up">
             <Image
               src="/assets/running.webp"
               alt="Runner on track"
