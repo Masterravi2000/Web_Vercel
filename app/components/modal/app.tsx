@@ -74,7 +74,7 @@ export default function JoinWaitlistModal({
             body: JSON.stringify({ waitingEmail: waitingemail, user }),
           }
         );
-        console.log(response);
+        // console.log(response);
 
         if (!response.ok) {
           const errorData = await response.json();
