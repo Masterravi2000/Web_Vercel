@@ -55,7 +55,7 @@ export default function JoinWaitlistModal({
     const POST_WAITLIST_URI = process.env.NEXT_PUBLIC_POST_WAITLIST_URI;
     console.log("Post waitlist uri: ", POST_WAITLIST_URI);
 
-    if (!POST_WAITLIST_URI) throw new Error("Article Post URI missing");
+    if (!POST_WAITLIST_URI) throw new Error("Waitlist Post URI missing");
 
     if (isValidEmail && user) {
       setIsLoading(true);
@@ -64,13 +64,16 @@ export default function JoinWaitlistModal({
 
       try {
         // const waitlist = {waitingEmail: waitingemail, user};
-        const response = await fetch(POST_WAITLIST_URI, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ waitingEmail: waitingemail, user }),
-        });
+        const response = await fetch(
+          `https://yourstrength.net/api/v1/waitList/post`,
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ waitingEmail: waitingemail, user }),
+          }
+        );
         console.log(response);
 
         if (!response.ok) {

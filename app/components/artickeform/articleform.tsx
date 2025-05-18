@@ -89,10 +89,13 @@ export default function CreateArticle() {
       form.append("content", formData.content);
       form.append("assets", formData.assets[0]);
 
-      const response = await fetch(POST_URI, {
-        method: "POST",
-        body: form,
-      });
+      const response = await fetch(
+        `https://yourstrength.net/api/v1/explore/post-article`,
+        {
+          method: "POST",
+          body: form,
+        }
+      );
 
       const data = await response.json();
       if (response.ok) {
