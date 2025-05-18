@@ -70,9 +70,9 @@ export default function CreateArticle() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const POST_URI = process.env.NEXT_PUBLIC_POST_ARTICLE_URI;
+    // const POST_URI = process.env.NEXT_PUBLIC_POST_ARTICLE_URI;
 
-    if (!POST_URI) throw new Error("Article Post URI missing");
+    // if (!POST_URI) throw new Error("Article Post URI missing");
 
     if (formData.assets.length === 0) {
       console.error("No files selected for upload.");

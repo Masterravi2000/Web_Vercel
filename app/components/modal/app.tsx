@@ -52,10 +52,10 @@ export default function JoinWaitlistModal({
   );
 
   const handleSubmit = useCallback(async () => {
-    const POST_WAITLIST_URI = process.env.NEXT_PUBLIC_POST_WAITLIST_URI;
-    console.log("Post waitlist uri: ", POST_WAITLIST_URI);
+    // const POST_WAITLIST_URI = process.env.NEXT_PUBLIC_POST_WAITLIST_URI;
+    // console.log("Post waitlist uri: ", POST_WAITLIST_URI);
 
-    if (!POST_WAITLIST_URI) throw new Error("Waitlist Post URI missing");
+    // if (!POST_WAITLIST_URI) throw new Error("Waitlist Post URI missing");
 
     if (isValidEmail && user) {
       setIsLoading(true);
