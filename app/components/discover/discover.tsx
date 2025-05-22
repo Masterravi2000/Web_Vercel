@@ -4,7 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Image from 'next/image'
 import { FC } from 'react'
-import JoinWaitlistModal from '../modal/app'
+import JoinWaitlistModal2 from "../modal2/app";
 
 
 const SportsCommunitySection: FC = () => {
@@ -17,15 +17,15 @@ const SportsCommunitySection: FC = () => {
     });
   }, []);
       const [isJoining] = useState(false)
-    const [isModalOpen, setIsModalOpen] = useState(false)
+    const [isModalOpen2, setIsModalOpen2] = useState(false)
   
-    const handleJoinWaitlist = () => {
-      setIsModalOpen(true)
+    const handleJoinWaitlist2 = () => {
+      setIsModalOpen2(true)
     }
   
 
-    const closeModal = () => {
-      setIsModalOpen(false)
+    const closeModal2 = () => {
+      setIsModalOpen2(false)
     }
 
   return (
@@ -47,9 +47,9 @@ const SportsCommunitySection: FC = () => {
         
 {/* Main button */}
 <button 
-  onClick={handleJoinWaitlist}
+  onClick={handleJoinWaitlist2}
   className="relative bg-white px-6 py-3 rounded-lg border border-black/10 flex items-center gap-4 text-lg font-medium hover:translate-x-1 hover:translate-y-1 transition-transform">
-  {isJoining ? 'Joining...' : 'Join Waitlist'}
+  {isJoining ? 'Downloading...' : 'Download'}
   <span className="inline-block">
     <svg 
       width="20" 
@@ -69,7 +69,7 @@ const SportsCommunitySection: FC = () => {
   </span>
 </button>
         </div>
-  <JoinWaitlistModal isOpen={isModalOpen} onClose={closeModal} />
+  <JoinWaitlistModal2 isOpen={isModalOpen2} onClose={closeModal2} />
     </div>
       <div className="relative w-[85%] h-auto mt-16 mx-auto" data-delay="400" data-aos="zoom-in-up">
         <Image

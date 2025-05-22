@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import AOS from "aos";
 import Image from 'next/image';
-import JoinWaitlistModal from '../modal/app'
+import JoinWaitlistModal2 from "../modal2/app";
 
 
 export default function AboutSection() {
@@ -14,14 +14,14 @@ export default function AboutSection() {
     });
   }, []);
     const [isJoining] = useState(false)
-    const [isModalOpen, setIsModalOpen] = useState(false)
+    const [isModalOpen2, setIsModalOpen2] = useState(false)
   
-    const handleJoinWaitlist = () => {
-      setIsModalOpen(true)
+    const handleJoinWaitlist2 = () => {
+      setIsModalOpen2(true)
     }
   
-    const closeModal = () => {
-      setIsModalOpen(false)
+    const closeModal2 = () => {
+      setIsModalOpen2(false)
     }
   
   return (
@@ -40,9 +40,9 @@ export default function AboutSection() {
             <div className="absolute inset-0 bg-black/50" />
             <div className="absolute inset-0 p-8 flex flex-col justify-end">
               <button 
-              onClick={handleJoinWaitlist}
+              onClick={handleJoinWaitlist2}
               className="inline-flex items-center gap-2 text-white border border-white/50 rounded-full px-6 py-2 w-fit hover:bg-white/10 transition-colors">
-                {isJoining ? 'Joining...' : 'Join Waitlist'}
+                {isJoining ? 'Downloading...' : 'Download'}
                 <Image
                   src="/svg/arrow_white.svg"
                   alt="Sports Community Icon"
@@ -58,7 +58,7 @@ export default function AboutSection() {
               </h2>
             </div>
           </div>
-  <JoinWaitlistModal isOpen={isModalOpen} onClose={closeModal} />
+  <JoinWaitlistModal2 isOpen={isModalOpen2} onClose={closeModal2} />
           {/* Middle 4 columns - Two cards stacked */}
           <div className="col-span-12 lg:col-span-4 grid grid-rows-2 gap-1" data-aos="zoom-in-up">
             <FeatureCard

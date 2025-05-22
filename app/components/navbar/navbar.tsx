@@ -5,18 +5,26 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import JoinWaitlistModal from '../modal/app'
+import JoinWaitlistModal2 from '../modal2/app'
 
 const Navbar: React.FC = () => {
     const [isJoining] = useState(false)
     const [isModalOpen, setIsModalOpen] = useState(false)
+    const [isModalOpen2, setIsModalOpen2] = useState(false)
     const pathname = usePathname()
   
     const handleJoinWaitlist = () => {
       setIsModalOpen(true)
     }
+      const handleJoinWaitlist2 = () => {
+      setIsModalOpen2(true)
+    }
 
     const closeModal = () => {
       setIsModalOpen(false)
+    }
+      const closeModal2 = () => {
+      setIsModalOpen2(false)
     }
 
     const NavLink = ({ href, children }: { href: string; children: React.ReactNode }) => {
@@ -55,14 +63,15 @@ const Navbar: React.FC = () => {
         {/* <NavLink href="/c">Articles</NavLink> */}
         <div>
           <button
-            onClick={handleJoinWaitlist}
+            onClick={handleJoinWaitlist2}
             id="joinWaitlistButton1"
             className="text-xl text-white bg-[#12956B] rounded-lg py-2 px-8 mr-10 max-lg:mr-0 max-sm:text-md max-sm:px-4 max-sm:py-1 max-[450px]:text-[1rem]"
           >
-            {isJoining ? 'Joining...' : 'Join Waitlist'}
+            {isJoining ? 'Download...' : 'Download'}
           </button>
         </div>
   <JoinWaitlistModal isOpen={isModalOpen} onClose={closeModal} />
+   <JoinWaitlistModal2 isOpen={isModalOpen2} onClose={closeModal2} />
       </div>
     </nav>
   )

@@ -3,11 +3,11 @@ import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Image from 'next/image';
-import JoinWaitlistModal from '../modal/app';
+import JoinWaitlistModal2 from "../modal2/app";
 
 const MainSection: React.FC = () => {
   const [isClient, setIsClient] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalOpen2, setIsModalOpen2] = useState(false);
 
   useEffect(() => {
     AOS.init({
@@ -19,12 +19,12 @@ const MainSection: React.FC = () => {
     setIsClient(true);
   }, []);
 
-  const handleJoinWaitlist = () => {
-    setIsModalOpen(true);
+  const handleJoinWaitlist2 = () => {
+    setIsModalOpen2(true);
   };
 
-  const closeModal = () => {
-    setIsModalOpen(false);
+  const closeModal2 = () => {
+    setIsModalOpen2(false);
   };
 
   const scrollToCommunity = () => {
@@ -49,16 +49,16 @@ const MainSection: React.FC = () => {
         </h1>
         <div className="w-[90%] flex justify-between items-center mt-[100px] max-[1700px]:mt-8 lg:flex-col max-lg:mx-auto max-lg:gap-x-8 max-lg:w-[90%] max-[500px]:flex-col max-[500px]:gap-y-5 max-[1060px]:mt-24 max-[600px]:mt-14 max-[600px]:w-full">
           <button
-            onClick={handleJoinWaitlist}
+            onClick={handleJoinWaitlist2}
             className="hidden lg:block w-full capitalize text-xl text-white bg-[#12956B] px-14 py-3 rounded-[4rem] mt-6 max-[1060px]:px-8 max-lg:w-full max-xl:mt-4 max-[1060px]:py-4 max-[1060px]:text-lg max-[1097px]:mt-0 max-lg:px-2"
           >
-            Request early access
+            Download now
           </button>
           <button
-            onClick={handleJoinWaitlist}
+            onClick={handleJoinWaitlist2}
             className="lg:hidden w-full capitalize rounded-3xl sm:rounded-[4rem] text-lg text-white bg-[#12956B] px-8 py-7 max-[500px]:w-[100%] max-[600px]:py-5 max-[600px]:px-4 max-[500px]:py-2"
           >
-            Request early access
+            Download now
           </button>
           <button
             onClick={scrollToCommunity}
@@ -87,7 +87,7 @@ const MainSection: React.FC = () => {
       </div>
 
       {/* Popup Modal (only on larger devices) */}
-      <JoinWaitlistModal isOpen={isModalOpen} onClose={closeModal} />
+      <JoinWaitlistModal2 isOpen={isModalOpen2} onClose={closeModal2} />
     </div>
   );
 };

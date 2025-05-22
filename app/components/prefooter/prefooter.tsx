@@ -2,18 +2,18 @@
 import Image from 'next/image'
 import { useState } from 'react'
 import './style.css'
-import JoinWaitlistModal from '../modal/app'
+import JoinWaitlistModal2 from '../modal2/app'
 
 export default function CommunityWelcome() {
   const [isJoining] = useState(false)
-  const [isModalOpen, setIsModalOpen] = useState(false)
+  const [isModalOpen2, setIsModalOpen2] = useState(false)
 
-  const handleJoinWaitlist = () => {
-    setIsModalOpen(true)
+  const handleJoinWaitlist2 = () => {
+    setIsModalOpen2(true)
   }
 
-  const closeModal = () => {
-    setIsModalOpen(false)
+  const closeModal2 = () => {
+    setIsModalOpen2(false)
   }
 
   return (
@@ -68,11 +68,11 @@ export default function CommunityWelcome() {
 
     {/* Main button */}
     <button
-      onClick={handleJoinWaitlist}
+      onClick={handleJoinWaitlist2}
       disabled={isJoining}
       className="relative bg-white px-6 py-2 rounded-md border border-black/10 flex items-center gap-4 text-base font-medium hover:translate-x-1 hover:translate-y-1 transition-transform disabled:opacity-50 disabled:cursor-not-allowed"
     >
-      {isJoining ? 'Joining...' : 'Join Waitlist'}
+      {isJoining ? 'Downloading...' : 'Download'}
       {!isJoining && (
         <span className="inline-block">
           <svg 
@@ -97,7 +97,7 @@ export default function CommunityWelcome() {
   </div>
 </div>
   </div>
-  <JoinWaitlistModal isOpen={isModalOpen} onClose={closeModal} />
+  <JoinWaitlistModal2 isOpen={isModalOpen2} onClose={closeModal2} />
     </div>
   )
 }
