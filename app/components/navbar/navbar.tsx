@@ -13,9 +13,6 @@ const Navbar: React.FC = () => {
     const [isModalOpen2, setIsModalOpen2] = useState(false)
     const pathname = usePathname()
   
-    const handleJoinWaitlist = () => {
-      setIsModalOpen(true)
-    }
       const handleJoinWaitlist2 = () => {
       setIsModalOpen2(true)
     }
