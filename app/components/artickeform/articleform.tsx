@@ -71,8 +71,9 @@ export default function CreateArticle() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const POST_URI = process.env.NEXT_PUBLIC_POST_ARTICLE_URI;
+    console.log("Article Post URI: ", POST_URI);
 
-    if (!POST_URI) throw new Error("Article Post URI missing");
+    // if (!POST_URI) throw new Error("Article Post URI missing");
 
     if (formData.assets.length === 0) {
       console.error("No files selected for upload.");
@@ -89,10 +90,13 @@ export default function CreateArticle() {
       form.append("content", formData.content);
       form.append("assets", formData.assets[0]);
 
-      const response = await fetch(POST_URI, {
-        method: "POST",
-        body: form,
-      });
+      const response = await fetch(
+        `https://yourstrength.net/api/v1/explore/post-article`,
+        {
+          method: "POST",
+          body: form,
+        }
+      );
 
       const data = await response.json();
       if (response.ok) {
