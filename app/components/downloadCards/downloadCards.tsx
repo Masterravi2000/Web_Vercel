@@ -5,6 +5,7 @@ import { DiAndroid } from "react-icons/di";
 const DownloadCard = ({ type = 'iOS' }) => {
     const isIOS = type === 'iOS';
     const androidLink = "https://play.google.com/store/apps/details?id=strength.net.in";
+    const iosLink = "https://apps.apple.com/us/app/strength-ultimate-sports-app/id6738089180";
 
     return (
         <div
@@ -36,14 +37,19 @@ const DownloadCard = ({ type = 'iOS' }) => {
             </div>
            
                 {isIOS ? (
-                <button
-                    disabled
-                    className="mt-6 bg-[#303030] cursor-not-allowed text-white text-14 md:text-28 
-                    flex items-center justify-center px-6 gap-4 w-[193px] h-[44px] rounded-[26px] 
-                    md:w-[310px] md:h-[72px] md:rounded-[41px]"
+                <a
+                    href={iosLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-6 bg-[#F0F0F0] text-black text-14 md:text-28 font-bold 
+                    flex items-center justify-start px-6 gap-4 
+                    w-[193px] h-[44px] rounded-[26px] 
+                    md:w-[310px] md:h-[72px] md:rounded-[41px] 
+                    hover:scale-105 transition"
                 >
-                    Coming Soon
-                </button>
+                    <TbDownload className="text-xl md:text-3xl" />
+                    Download
+                </a>
             ) : (
                 <a
                     href={androidLink}
