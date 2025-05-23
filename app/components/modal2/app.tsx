@@ -31,9 +31,9 @@ export default function JoinWaitlistModal2({ isOpen, onClose }: JoinWaitlistModa
         </div>
 
         {/* Message */}
-        <h2 className="text-2xl font-bold mb-2 text-center">Get the Full Experience</h2>
-        <p className="text-center text-sm text-gray-300 mb-6">
-          Our app is now live on both the Play Store and App Store. Install now to unlock everything we’ve built for you!
+        <h2 className="text-2xl font-bold mb-2 text-center">Setp into the World of Sports</h2>
+        <p className="text-center text-sm text-gray-300 mb-6 px-4">
+          Dive into real-time action, stories, and connections. Strength is live download now and be part of it.
         </p>
 
         {/* Store Buttons */}
@@ -47,7 +47,7 @@ export default function JoinWaitlistModal2({ isOpen, onClose }: JoinWaitlistModa
             <FaGooglePlay size={28} className="text-white transition" />
             <div className="flex flex-col">
               <span className="text-xs text-white/80">GET IT ON</span>
-              <span className="text-lg font-semibold text-white leading-5">Google Play</span>
+              <span className="text-lg font-semibold text-white leading-5">Play Store</span>
             </div>
           </a>
 
