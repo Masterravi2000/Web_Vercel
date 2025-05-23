@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { FaApple, FaGooglePlay } from 'react-icons/fa'
 
 export default function Footer() {
   const [waitingemail, setWaitingEmail] = useState('')
@@ -67,7 +68,7 @@ export default function Footer() {
             <div className="flex gap-x-4 items-center w-fit">
               <Image
                 className="w-[70px] py-2 max-lg:w-[55px] rounded-[10px]"
-                src="/logo/logo.png"
+                src="/assets/Logo28.png"
                 alt="Strength Logo"
                 width={80}
                 height={80}
@@ -113,39 +114,58 @@ export default function Footer() {
         <h1 className="text-[#CFD3D7] border-t-2 border-black text-center py-4 max-[1496px]:text-sm text-[18px]">
           Copyright {currentYear}
         </h1>
-        <div className="absolute w-full top-[-80px] px-24 max-[900px]:px-0">
-          <div className="bg-white mx-auto rounded-2xl px-12 py-8 flex items-center justify-between gap-x-10 max-w-8xl w-full max-[1100px]:flex-col max-[1100px]:justify-center max-[1100px]:w-[80%] max-[400px]:px-4 max-[400px]:w-[95%] max-[400px]:mx-auto">
-            <div className="w-full">
-              <h1 className="text-4xl font-medium max-[900px]:text-3xl max-[400px]:text-xl text-black" style={{ fontFamily: 'Krona One' }}>
-                Get early access
-              </h1>
-              <p className="font-medium mt-5 max-[400px]:text-sm max-[400px]:font-medium text-black">
-                Enter your email and you&apos;ll be the first to know when <br className="max-[400px]:hidden" /> Strength launches.
-              </p>
-            </div>
-            <div className="max-[1100px]:w-full">
-              <form onSubmit={handleSubmit} className="flex flex-col items-end max-[1100px]:w-full">
-                <input
-                  className="w-[600px] max-[1496px]:w-[500px] h-[50px] border-2 px-4 max-[1100px]:mt-10 rounded-lg max-[1100px]:w-full"
-                  type="email"
-                  placeholder="Your email"
-                  value={waitingemail}
-                  onChange={handleEmailChange}
-                />
-                {!isValidEmail && <p className="text-red-500 mb-4">Please enter a valid email address.</p>}
-                {error && <p className="text-red-500 mb-4">{error}</p>}
-                {success && <p className="text-green-500 mb-4">Email submitted successfully!</p>}
-                <button
-                  className="bg-black mt-3 text-white h-[50px] px-8 rounded-md max-[900px]:mx-auto font-bold"
-                  type="submit"
-                  disabled={isLoading}
-                >
-                  {isLoading ? 'Submitting...' : 'Request early access'}
-                </button>
-              </form>
-            </div>
-          </div>
-        </div>
+
+        <div className="absolute w-full top-[-80px] px-24 max-[900px]:px-4">
+  <div className="bg-white mx-auto rounded-2xl px-12 py-8 flex items-center justify-between gap-x-10 max-w-8xl w-full shadow-xl max-[1100px]:flex-col max-[1100px]:justify-center max-[1100px]:w-[90%] max-[400px]:px-4 max-[400px]:w-[95%] max-[400px]:mx-auto">
+    
+    {/* Text Section */}
+    <div className="w-full text-left">
+      <h1
+        className="text-4xl font-medium max-[900px]:text-3xl max-[400px]:text-xl text-black"
+        style={{ fontFamily: 'Krona One' }}
+      >
+       Strength is more than a platform!
+      </h1>
+      <p className="font-medium mt-5 max-[400px]:text-sm text-black">
+        It’s where the entire sports world comes together.<br className="max-[400px]:hidden" />
+      </p>
+    </div>
+
+    {/* Download Buttons */}
+<div className="flex gap-6 justify-center mt-6 max-w-full px-4 sm:px-8 md:px-0">
+  <a
+    href="https://apps.apple.com/app/id000000000" // Replace with real App Store link
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center gap-3 bg-black text-white rounded-xl shadow-md
+               py-3 px-6 sm:py-4 sm:px-10 md:px-12
+               hover:bg-gray-900 transition-colors duration-200
+               min-w-[140px]"
+  >
+    <FaApple className="text-2xl sm:text-3xl" />
+    <div className="text-left leading-tight">
+      <p className="text-sm font-semibold whitespace-nowrap">App Store</p>
+    </div>
+  </a>
+
+  <a
+    href="https://play.google.com/store/apps/details?id=com.yourapp.package" // Replace with real Play Store link
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center gap-3 bg-black text-white rounded-xl shadow-md
+               py-3 px-6 sm:py-4 sm:px-10 md:px-12
+               hover:bg-gray-900 transition-colors duration-200
+               min-w-[140px]"
+  >
+    <FaGooglePlay className="text-2xl sm:text-3xl" />
+    <div className="text-left leading-tight">
+      <p className="text-sm font-semibold whitespace-nowrap">Play Store</p>
+    </div>
+  </a>
+</div>
+
+  </div>
+</div>
       </footer>
     </div>
   )

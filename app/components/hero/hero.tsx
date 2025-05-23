@@ -36,6 +36,10 @@ const MainSection: React.FC = () => {
     }
   };
 
+    // Open the modal automatically for 2 seconds on first render
+  useEffect(() => {
+    setIsModalOpen2(true)
+  }, [])
 
   if (!isClient) {
     return null;

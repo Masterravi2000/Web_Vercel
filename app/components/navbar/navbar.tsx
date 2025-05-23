@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
@@ -8,42 +8,42 @@ import JoinWaitlistModal from '../modal/app'
 import JoinWaitlistModal2 from '../modal2/app'
 
 const Navbar: React.FC = () => {
-    const [isJoining] = useState(false)
-    const [isModalOpen, setIsModalOpen] = useState(false)
-    const [isModalOpen2, setIsModalOpen2] = useState(false)
-    const pathname = usePathname()
-  
-      const handleJoinWaitlist2 = () => {
-      setIsModalOpen2(true)
-    }
+  const [isJoining] = useState(false)
+  const [isModalOpen, setIsModalOpen] = useState(false)
+  const [isModalOpen2, setIsModalOpen2] = useState(false)
+  const pathname = usePathname()
 
-    const closeModal = () => {
-      setIsModalOpen(false)
-    }
-      const closeModal2 = () => {
-      setIsModalOpen2(false)
-    }
+  const handleJoinWaitlist2 = () => {
+    setIsModalOpen2(true)
+  }
 
-    const NavLink = ({ href, children }: { href: string; children: React.ReactNode }) => {
-      const isActive = pathname === href
-      return (
-        <Link 
-          href={href} 
-          className={`text-[#D3D3D3] hover:text-white text-md cursor-pointer max-md:hidden relative
+  const closeModal = () => {
+    setIsModalOpen(false)
+  }
+  const closeModal2 = () => {
+    setIsModalOpen2(false)
+  }
+
+  const NavLink = ({ href, children }: { href: string; children: React.ReactNode }) => {
+    const isActive = pathname === href
+    return (
+      <Link
+        href={href}
+        className={`text-[#D3D3D3] hover:text-white text-md cursor-pointer max-md:hidden relative
             ${isActive ? 'text-white' : ''}
           `}
-        >
-          {children}
-          {isActive && (
-            <span className="absolute bottom-[-4px] left-0 w-full h-[2px] bg-gray-400"></span>
-          )}
-        </Link>
-      )
-    }
+      >
+        {children}
+        {isActive && (
+          <span className="absolute bottom-[-4px] left-0 w-full h-[2px] bg-gray-400"></span>
+        )}
+      </Link>
+    )
+  }
 
   return (
     <nav className="w-full pt-3 pb-2 flex items-center justify-between bg-black px-20 max-[900px]:px-10 max-sm:px-8 max-[450px]:px-4 sm:border-b sm:border-b-[#2B2A2A]">
-      <div className="flex gap-x-2 text-white items-center cursor-pointer">
+      <a href='/' className="flex gap-x-2 text-white items-center cursor-pointer">
         <Image
           className="w-[50px] max-[1496px]:w-11 max-sm:w-10"
           src="/logo/logo.png"
@@ -52,7 +52,7 @@ const Navbar: React.FC = () => {
           height={50}
         />
         <p className="max-[1496px]:text-2xl font-semibold text-4xl">Strength</p>
-      </div>
+      </a>
       <div className="flex justify-between items-center gap-x-[4rem] max-[900px]:gap-x-[3rem]">
         <NavLink href="/">Home</NavLink>
         <NavLink href="/contactus">Contact</NavLink>
@@ -67,8 +67,8 @@ const Navbar: React.FC = () => {
             {isJoining ? 'Download...' : 'Download'}
           </button>
         </div>
-  <JoinWaitlistModal isOpen={isModalOpen} onClose={closeModal} />
-   <JoinWaitlistModal2 isOpen={isModalOpen2} onClose={closeModal2} />
+        <JoinWaitlistModal isOpen={isModalOpen} onClose={closeModal} />
+        <JoinWaitlistModal2 isOpen={isModalOpen2} onClose={closeModal2} />
       </div>
     </nav>
   )
