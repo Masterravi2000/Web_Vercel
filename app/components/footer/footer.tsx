@@ -5,60 +5,11 @@ import Link from 'next/link'
 import { FaApple, FaGooglePlay } from 'react-icons/fa'
 
 export default function Footer() {
-  const [waitingemail, setWaitingEmail] = useState('')
-  const [isValidEmail, setIsValidEmail] = useState(true)
-  const [isLoading, setIsLoading] = useState(false)
-  const [error, setError] = useState<string | null>(null)
-  const [success, setSuccess] = useState(false)
   const [currentYear, setCurrentYear] = useState(new Date().getFullYear())
 
   useEffect(() => {
     setCurrentYear(new Date().getFullYear())
   }, [])
-
-  const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setWaitingEmail(e.target.value)
-    setIsValidEmail(true)
-    setError(null)
-    setSuccess(false)
-  }
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-    if (!emailRegex.test(waitingemail)) {
-      setIsValidEmail(false)
-      return
-    }
-
-    setIsLoading(true)
-    setError(null)
-    try {
-      const response = await fetch('/api/mail', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ waitingemail }),
-      })
-
-      if (!response.ok) {
-        const errorData = await response.json()
-        throw new Error(errorData.message || 'Failed to submit email.')
-      }
-
-      setSuccess(true)
-      setWaitingEmail('')
-    } catch (err: unknown) {
-      if (err instanceof Error) {
-        setError(err.message)
-      } else {
-        setError('An unknown error occurred.')
-      }
-    } finally {
-      setIsLoading(false)
-    }
-  }
 
   return (
     <div className="mt-32 pt-25">
@@ -134,7 +85,7 @@ export default function Footer() {
     {/* Download Buttons */}
 <div className="flex gap-6 justify-center mt-6 max-w-full px-4 sm:px-8 md:px-0">
   <a
-    href="https://apps.apple.com/app/id000000000" // Replace with real App Store link
+    href="https://apps.apple.com/us/app/strength-ultimate-sports-app/id6738089180" // Replace with real App Store link
     target="_blank"
     rel="noopener noreferrer"
     className="flex items-center gap-3 bg-black text-white rounded-xl shadow-md
@@ -149,7 +100,7 @@ export default function Footer() {
   </a>
 
   <a
-    href="https://play.google.com/store/apps/details?id=com.yourapp.package" // Replace with real Play Store link
+    href="https://play.google.com/store/apps/details?id=strength.net.in" // Replace with real Play Store link
     target="_blank"
     rel="noopener noreferrer"
     className="flex items-center gap-3 bg-black text-white rounded-xl shadow-md
