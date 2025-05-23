@@ -31,8 +31,8 @@ export default function JoinWaitlistModal2({ isOpen, onClose }: JoinWaitlistModa
         </div>
 
         {/* Message */}
-        <h2 className="text-2xl font-bold mb-2 text-center">Unleash Your Sports World!</h2>
-        <p className="text-center text-sm text-gray-300 mb-6 px-4">
+        <h2 className="text-xl font-bold md:text-2xl mb-2 text-center">Step into the World of Sports</h2>
+        <p className="text-center text-sm text-gray-300 mb-6 px-2">
           Dive into real-time action, stories, and connections. Strength is live download now and be part of it.
         </p>
 
