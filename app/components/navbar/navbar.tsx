@@ -43,7 +43,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className="w-full pt-3 pb-2 flex items-center justify-between bg-black px-20 max-[900px]:px-10 max-sm:px-8 max-[450px]:px-4 sm:border-b sm:border-b-[#2B2A2A]">
-      <a href='/' className="flex gap-x-2 text-white items-center cursor-pointer">
+      <Link href='/' className="flex gap-x-2 text-white items-center cursor-pointer">
         <Image
           className="w-[50px] max-[1496px]:w-11 max-sm:w-10"
           src="/logo/logo.png"
@@ -52,7 +52,7 @@ const Navbar: React.FC = () => {
           height={50}
         />
         <p className="max-[1496px]:text-2xl font-semibold text-4xl">Strength</p>
-      </a>
+      </Link>
       <div className="flex justify-between items-center gap-x-[4rem] max-[900px]:gap-x-[3rem]">
         <NavLink href="/">Home</NavLink>
         <NavLink href="/contactus">Contact</NavLink>
