@@ -19,8 +19,8 @@ export default function ParallaxScreen() {
       }, stepTime);
     }
 
-    animateValue("totalUsers", 0, 475, 3000);
-    animateValue("totalUsers2", 0, 475, 3000);
+    animateValue("totalUsers", 0, 624, 3000);
+    animateValue("totalUsers2", 0, 624, 3000);
     animateValue("totalConnections", 0, 7456, 9000);
     animateValue("totalConnections2", 0, 7456, 9000);
   }, []);
