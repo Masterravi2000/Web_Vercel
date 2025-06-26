@@ -49,7 +49,7 @@ const SportsCommunitySection: FC = () => {
 <button 
   onClick={handleJoinWaitlist2}
   className="relative bg-white px-6 py-3 rounded-lg border border-black/10 flex items-center gap-4 text-lg font-medium hover:translate-x-1 hover:translate-y-1 transition-transform">
-  {isJoining ? 'Downloading...' : 'Download'}
+  {isJoining ? 'Downloading...' : 'Download Beta'}
   <span className="inline-block">
     <svg 
       width="20" 

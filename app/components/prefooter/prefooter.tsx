@@ -72,7 +72,7 @@ export default function CommunityWelcome() {
       disabled={isJoining}
       className="relative bg-white px-6 z-50 py-2 rounded-md border border-black/10 flex items-center gap-4 text-base font-medium hover:translate-x-1 hover:translate-y-1 transition-transform disabled:opacity-50 disabled:cursor-not-allowed"
     >
-      {isJoining ? 'Downloading...' : 'Download'}
+      {isJoining ? 'Downloading...' : 'Download Beta'}
       {!isJoining && (
         <span className="inline-block">
           <svg 

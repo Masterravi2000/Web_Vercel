@@ -78,7 +78,7 @@ export default function Footer() {
        Strength is more than a platform!
       </h1>
       <p className="font-medium mt-5 max-[400px]:text-sm text-black">
-        It’s where the entire sports world comes together.<br className="max-[400px]:hidden" />
+       Join the Strength beta where the future of the sports world begins.<br className="max-[400px]:hidden" />
       </p>
     </div>
 

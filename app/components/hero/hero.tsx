@@ -56,13 +56,13 @@ const MainSection: React.FC = () => {
             onClick={handleJoinWaitlist2}
             className="hidden lg:block w-full capitalize text-xl text-white bg-[#12956B] px-14 py-3 rounded-[4rem] mt-6 max-[1060px]:px-8 max-lg:w-full max-xl:mt-4 max-[1060px]:py-4 max-[1060px]:text-lg max-[1097px]:mt-0 max-lg:px-2"
           >
-            Download now
+            Download Beta
           </button>
           <button
             onClick={handleJoinWaitlist2}
             className="lg:hidden w-full capitalize rounded-3xl sm:rounded-[4rem] text-lg text-white bg-[#12956B] px-8 py-7 max-[500px]:w-[100%] max-[600px]:py-5 max-[600px]:px-4 max-[500px]:py-2"
           >
-            Download now
+            Download Beta
           </button>
           <button
             onClick={scrollToCommunity}

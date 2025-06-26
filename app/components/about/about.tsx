@@ -42,7 +42,7 @@ export default function AboutSection() {
               <button 
               onClick={handleJoinWaitlist2}
               className="inline-flex items-center gap-2 text-white border border-white/50 rounded-full px-6 py-2 w-fit hover:bg-white/10 transition-colors">
-                {isJoining ? 'Downloading...' : 'Download'}
+                {isJoining ? 'Downloading...' : 'Download Beta'}
                 <Image
                   src="/svg/arrow_white.svg"
                   alt="Sports Community Icon"

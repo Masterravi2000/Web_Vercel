@@ -64,7 +64,7 @@ const Navbar: React.FC = () => {
             id="joinWaitlistButton1"
             className="text-xl text-white bg-[#12956B] rounded-lg py-2 px-8 mr-10 max-lg:mr-0 max-sm:text-md max-sm:px-4 max-sm:py-1 max-[450px]:text-[1rem]"
           >
-            {isJoining ? 'Download...' : 'Download'}
+            {isJoining ? 'Download Beta...' : 'Download Beta'}
           </button>
         </div>
         <JoinWaitlistModal isOpen={isModalOpen} onClose={closeModal} />
