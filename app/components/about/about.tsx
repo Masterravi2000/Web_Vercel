@@ -75,11 +75,11 @@ export default function AboutSection() {
               }
             />
             <FeatureCard
-              title="Latest in Sports"
+              title="Performance Insights"
               description="Stay updated with the latest news, trends, and events in the sports world."
               icon={
                 <Image
-                  src="/assets/newspaper.png"
+                  src="/assets/dashboard.png"
                   alt="Latest in Sports Icon"
                   width={48}
                   height={48}
@@ -92,11 +92,11 @@ export default function AboutSection() {
           {/* Right 4 columns - Two cards stacked */}
           <div className="col-span-12 lg:col-span-4 grid grid-rows-2 gap-1" data-aos="zoom-in-up">
             <FeatureCard
-              title="Purposeful Connections"
+              title="Rael-time Scoring"
               description="Connect with like-minded athletes, potential mentors, and sponsors who supports your sport journey."
               icon={
                 <Image
-                  src="/assets/support.png"
+                  src="/assets/scoreboard.png"
                   alt="Purposeful Connections Icon"
                   width={48}
                   height={48}

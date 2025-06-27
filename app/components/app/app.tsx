@@ -32,18 +32,18 @@ export default function SportsProfile() {
           <div className="flex w-full h-fit my-auto flex-col gap-2 pl-[100px] max-xl:pl-0">
             <div className="w-full">
               <Image src="/svg/diveinto.svg" alt="" width={30} height={30} className="custom-fade-up mb-6 sm:hidden" data-delay="100" />
-              <h1 className="custom-fade-up text-white text-4xl max-[1100px]:text-3xl max-[1060px]:text-2xl max-[720px]:text-xl max-[650px]:text-left max-[650px]:text-4xl max-[500px]:text-2xl max-[400px]:text-xl max-[840px]:w-full" data-aos="fade-up" style={{ fontFamily: 'Krona One' }}> Dive into the sports feed </h1>
+              <h1 className="custom-fade-up text-white text-4xl max-[1100px]:text-3xl max-[1060px]:text-2xl max-[720px]:text-xl max-[650px]:text-left max-[650px]:text-4xl max-[500px]:text-2xl max-[400px]:text-xl max-[840px]:w-full" data-aos="fade-up" style={{ fontFamily: 'Krona One' }}> Accurate Scoring </h1>
             </div>
-            <p className="custom-fade-up text-gray-400 text-2xl font-thin max-[980px]:text-xl max-[720px]:text-base max-[650px]:text-left max-[650px]:text-lg max-[400px]:text-base" data-delay="100" data-aos="fade-up"> Access the latest sports news, updates, and share your achievements to stay connected and inspired. </p>
+            <p className="custom-fade-up text-gray-400 text-2xl font-thin max-[980px]:text-xl max-[720px]:text-base max-[650px]:text-left max-[650px]:text-lg max-[400px]:text-base" data-delay="100" data-aos="fade-up"> Score matches accurately with the integrated scoring system, providing real-time updates and comprehensive statistics. </p>
           </div>
         </div>
         <div className="flex justify-between items-start px-8 gap-x-10 max-[650px]:flex-col max-[650px]:w-[90%] max-[650px]:mx-auto max-[850px]:justify-between max-[650px]:px-0 max-[550px]:w-full max-[550px]:mx-0">
           <div className="flex w-full h-fit my-auto flex-col gap-2 pr-[100px] max-xl:pr-0 max-[550px]:px-2">
             <div className="w-full">
               <Image src="/svg/discover.svg" alt="" width={30} height={30} className="custom-fade-up mb-6 sm:hidden"/>
-              <h1 className="custom-fade-up text-white text-4xl max-[1100px]:text-3xl max-[1060px]:text-2xl max-[720px]:text-xl max-[650px]:text-left max-[650px]:text-4xl max-[500px]:text-2xl max-[400px]:text-xl max-[840px]:w-full" data-aos="fade-up" style={{ fontFamily: 'Krona One' }}> Discover the latest in sports </h1>
+              <h1 className="custom-fade-up text-white text-4xl max-[1100px]:text-3xl max-[1060px]:text-2xl max-[720px]:text-xl max-[650px]:text-left max-[650px]:text-4xl max-[500px]:text-2xl max-[400px]:text-xl max-[840px]:w-full" data-aos="fade-up" style={{ fontFamily: 'Krona One' }}> Performance Analytics </h1>
             </div>
-            <p className="custom-fade-up text-gray-400 text-2xl font-thin max-[980px]:text-xl max-[720px]:text-base max-[650px]:text-left max-[650px]:text-lg max-[400px]:text-base" data-aos="fade-up" data-delay="100"> Explore real-time updates across your favorite sports, with top headlines, scores, and trends—all in one place. </p>
+            <p className="custom-fade-up text-gray-400 text-2xl font-thin max-[980px]:text-xl max-[720px]:text-base max-[650px]:text-left max-[650px]:text-lg max-[400px]:text-base" data-aos="fade-up" data-delay="100"> Receive insights into performance metrics to effectively track and monitor performance and progress with detailed statistics. </p>
           </div>
           <Image className="custom-fade-in w-[400px] max-[980px]:w-[350px] max-[650px]:mt-10 max-[650px]:mx-auto max-[800px]:w-[250px] max-[650px]:w-full" data-delay="400" src="/assets/Explore2.png" alt="" width={400} height={400}  data-aos="zoom-in"/>
         </div>

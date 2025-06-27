@@ -92,10 +92,10 @@ const DynamicArena: FC = () => {
           data-aos-offset="50" 
           data-aos-duration="800" 
           className="text-gray-400 mt-5 text-2xl font-thin opacity-80 pr-[80px] leading-tight max-[950px]:text-xl max-md:text-lg max-sm:text-base">
-          From connecting with he sports community to staying updated on events, Strength empowers everyone to immerse fully in their passion. With features that foster connection, growth, and engagement, Strength brings the entire sports world to your fingertips —
+          Strength aims to revolutionize the way athletes manage their sports careers by providing an all-in-one platform that combines real-time performance insights, detailed analytics & sports community. By doing so, it empowers athletes to focus on what they do best
         </p>
         <span className="font-bold text-2xl text-white hover:cursor-pointer">
-        — so you can thrive, share, and excel in what you love.
+        — excel in their sports.
         </span>
       </div>
     </div>
